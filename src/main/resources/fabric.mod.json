@@ -11,6 +11,7 @@
     "issues": "https://github.com/plagness/Create-No-Unlimited-Energy/issues"
   },
   "license": "MIT",
+  "icon": "assets/create_nue/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": ["space.plag.createnue.CreateNue"]
