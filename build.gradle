@@ -1,0 +1,47 @@
+plugins {
+	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
+
+repositories {}
+
+loom {
+	mods {
+		"codemine-waterwheel" {
+			sourceSet sourceSets.main
+		}
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings loom.officialMojangMappings()
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	// Create 6 + Flowing Fluids + Create's bundled ecosystem (JiJ extracted) — compile only.
+	// Provided at runtime by the modpack; Loom remaps these (intermediary -> Mojang) for compilation.
+	fileTree(dir: 'libs', include: '*.jar').each { jar -> add('modCompileOnly', files(jar)) }
+	fileTree(dir: 'libs/nested', include: '*.jar').each { jar -> add('modCompileOnly', files(jar)) }
+}
+
+processResources {
+	inputs.property "version", project.version
+	filesMatching("fabric.mod.json") {
+		expand "version": project.version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 17
+}
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
+}

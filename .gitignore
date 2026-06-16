@@ -1,0 +1,13 @@
+# Build output
+build/
+.gradle/
+
+# Third-party dependency jars (extracted from Create's JiJ for compile only — not ours to redistribute).
+# Repopulate by extracting META-INF/jars/*.jar from the Create 6 Fabric jar into libs/nested/,
+# and placing the Create + Flowing Fluids + ForgeConfigAPIPort jars in libs/.
+libs/
+
+# Editor / OS
+*.iml
+.idea/
+.DS_Store

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "create_nue",
+  "version": "${version}",
+  "name": "Create: No Unlimited Energy",
+  "description": "Create's free, easy energy is the bug — Create: NUE deepens it. Water wheels generate power only from genuine FLOWING water, scaled by flow strength, head (drop height) and biome, with a water-as-fuel tax that makes sealed perpetual-motion loops run dry. Windmills become VARIABLE wind: a visible rotor speed driven by gusts, weather and the day/night cycle, with power set by placement; big dams reward megastructure builds. Optional ComputerCraft peripherals expose live telemetry of every wheel, windmill and gauge so you can build your own control logic.",
+  "authors": ["plag"],
+  "contact": {
+    "homepage": "https://modrinth.com/project/Create-NUE",
+    "sources": "https://github.com/plagness/Create-No-Unlimited-Energy",
+    "issues": "https://github.com/plagness/Create-No-Unlimited-Energy/issues"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["space.plag.createnue.CreateNue"]
+  },
+  "mixins": [
+    "create_nue.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15",
+    "minecraft": "~1.20.1",
+    "create": "*",
+    "flowing_fluids": "*"
+  },
+  "suggests": {
+    "computercraft": "*"
+  }
+}
