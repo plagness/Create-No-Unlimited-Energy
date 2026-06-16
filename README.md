@@ -8,6 +8,17 @@ NUE ties [Create](https://modrinth.com/mod/create-fabric)'s kinetics to genuinel
 problem: build a hydroelectric dam, a wind farm, and the logic that runs them — instead of a wheel parked
 in a puddle. Server-authoritative; clients only need the jar to see correct numbers in the goggles.
 
+## In action
+
+![Goggle readout — live power, rotation speed, and the dam-coherence multiplier](https://raw.githubusercontent.com/plagness/Create-No-Unlimited-Energy/main/img/stats.jpg)
+*Goggle readout: available power, rotation speed, and the dam-coherence multiplier (a 9-wheel dam, ×1.40).*
+
+![A live energy dashboard on a ComputerCraft monitor](https://raw.githubusercontent.com/plagness/Create-No-Unlimited-Energy/main/img/tablo.jpg)
+*A live energy dashboard on a monitor, driven by the `cm_generator` and `cm_meter` peripherals.*
+
+![Wiring ComputerCraft modems to the wheels and gauges](https://raw.githubusercontent.com/plagness/Create-No-Unlimited-Energy/main/img/connect.jpg)
+*Wiring ComputerCraft modems to the wheels and gauges (green = a peripheral is attached).*
+
 ## Philosophy
 
 - **Free, easy energy is the bug.** A wheel in a still pool — or a sealed pump loop — should *not* power
