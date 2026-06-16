@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import traben.flowing_fluids.api.FlowingFluidsAPI;
 
 /**
- * CodeMine Waterwheel — physically-grounded hydro & wind power for Create + Flowing Fluids.
+ * Create: No Unlimited Energy — physically-grounded hydro & wind power for Create + Flowing Fluids.
  *
  * Base fix: Create's getFlowVectorAtPosition is redirected to vanilla FluidState#getFlow (FF 1.0.6's
  * REQUIRE_FLOW path is doubly broken), so wheels only turn on a genuine current. On top of that:
