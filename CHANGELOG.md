@@ -1,5 +1,7 @@
 # Changelog
 
+All notable changes per release. Newest first.
+
 ## 1.0.0
 First public release of **Create: No Unlimited Energy**.
 
@@ -11,4 +13,5 @@ First public release of **Create: No Unlimited Energy**.
   **force** (sky exposure × height × region biome). Wind is variable and weaker than water.
 - **ComputerCraft (optional):** `cm_generator` (wheels, windmills) and `cm_meter` (Stressometer, Speedometer)
   read-only telemetry peripherals; no new blocks, no hard dependency.
+- **Localization:** English, Russian, Simplified Chinese.
 - Fully configurable via `config/create_nue.json`.
