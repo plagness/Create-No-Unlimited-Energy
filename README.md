@@ -46,6 +46,16 @@ in a puddle. Server-authoritative; clients only need the jar to see correct numb
 
 Fabric Loader ≥ 0.15 · **Java 17 or 21**.
 
+## Languages
+
+In-game text (the goggle readout) is localized:
+
+- 🇬🇧 English (`en_us`) — default
+- 🇷🇺 Русский (`ru_ru`)
+- 🇨🇳 简体中文 (`zh_cn`)
+
+Translations welcome — add an `assets/create_nue/lang/<locale>.json` and open a PR.
+
 ## Features
 
 ### Water wheels — flowing water only, and dams pay off
