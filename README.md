@@ -119,6 +119,11 @@ rewarding way to make electricity**, with water wheels and windmills as the mech
 economy is built on. Planned: a profitable-generation economy hook, pumped-hydro storage, seasonal
 water/wind, and richer ComputerCraft telemetry.
 
+## Contributing
+
+Build, architecture, mixin conventions, localization, and the release process are documented in
+[`AGENTS.md`](AGENTS.md). Translations and PRs welcome.
+
 ## License
 
 [MIT](LICENSE). Contributions and forks welcome.
