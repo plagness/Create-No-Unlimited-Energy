@@ -379,11 +379,10 @@ public abstract class WaterWheelBlockEntityMixin extends GeneratingKineticBlockE
             return added;
         }
         double mul = Math.min(cfg.damCoherenceMax, 1.0 + cfg.damCoherencePerWheel * (this.nue$damSize - 1));
-        tooltip.add(Component.literal("    ")
-                .append(Component.literal("ГЭС ").withStyle(ChatFormatting.GRAY))
-                .append(Component.literal(this.nue$damSize + " колёс").withStyle(ChatFormatting.AQUA))
-                .append(Component.literal("  ×" + String.format(java.util.Locale.ROOT, "%.2f", mul))
-                        .withStyle(ChatFormatting.GREEN)));
+        tooltip.add(Component.literal("    ").append(
+                Component.translatable("create_nue.goggle.dam", this.nue$damSize,
+                                String.format(java.util.Locale.ROOT, "%.2f", mul))
+                        .withStyle(ChatFormatting.AQUA)));
         return true;
     }
 
